@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Intervention records</title>
+
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/header-fixed.css">
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+
+<header class="header-fixed">
+
+	<div class="header-limiter">
+
+		<h1><a href="#">I<span>Reporter</span></a></h1>
+
+		<nav>
+			<a href="home.html">Home</a>
+			<a href="redflag.html">Redflag</a>
+			<a href="Intervention records.html">Intervention records</a>
+			<a href="Admin.html">Admin</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+
+	</div>
+
+</header>
+
+<!-- You need this element to prevent the content of the page from jumping up -->
+<div class="header-fixed-placeholder"></div>
+
+<!-- The content of your page would go here. -->
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+
+		var showHeaderAt = 150;
+
+		var win = $(window),
+				body = $('body');
+
+		// Show the fixed header only on larger screen devices
+
+		if(win.width() > 400){
+
+			// When we scroll more than 150px down, we set the
+			// "fixed" class on the body element.
+
+			win.on('scroll', function(e){
+
+				if(win.scrollTop() > showHeaderAt) {
+					body.addClass('fixed');
+				}
+				else {
+					body.removeClass('fixed');
+				}
+			});
+
+		}
+
+	});
+
+</script>
+
+
+<!-- Demo ads. Please ignore and remove. -->
+<script src="http://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
+<h1>What past storms teach us</h1>
+<p>After South Carolina’s historic flooding in October 2015, road and bridge repairs cost $137 million with the state paying about $49 million of that cost, S.C. DOT said at the time.
+
+Some repairs took many months, forcing residents to take alternative routes. For example, one bridge near Columbia that washed out took eight months to rebuild.
+
+And when Hurricane Matthew brought catastrophic flooding to eastern North Carolina in October 2016, hundreds of roads and bridges were damaged. It was more than a year before they were were all fully repaired.
+
+The total repair cost: Almost $200 million. The federal government covered about three quarters of that amount and the state covered the rest.</p>
+
+<h1>Some old bridges at risk</h1>
+<p>More than 400 bridges cross North and South Carolina rivers that reached “major” flood levels as a result of the storm, according to an Observer analysis of data from the U.S. Department of Transportation and the National Weather Service.
+
+Those include the the Waccamaw and Pee Dee rivers in South Carolina and Cape Fear, Neuse and Lumber rivers in North Carolina.
+
+Collectively, these bridges carry more than 2.9 million drivers daily, data show.
+
+Brian Hanks, state structures engineer for N.C. DOT, said floods can damage bridges, especially if the structures are already in poor condition.
+
+Rushing water can send debris smashing into pilings or cause bridge decks to separate from their supports.
+
+If water has washed away sediment from beneath bridge piers, or if those piers have deteriorated, bridges can become more vulnerable, Hanks said.
+
+Often, such bridges are old and were not built to current standards, he said.
+
+About 40 bridges along the majorly flooded rivers in the Carolinas have deteriorated piers or sediment that has washed away, data show. Half are at least 60 years old.</p>
+
+</body>
+
+</html>

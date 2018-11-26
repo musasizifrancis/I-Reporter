@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Basic Header</title>
+
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/header-fixed.css">
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+
+<header class="header-fixed">
+
+	<div class="header-limiter">
+
+		<h1><a href="#">I<span>Reporter</span></a></h1>
+
+		<nav>
+			<a href="home.html">Home<a>
+			<a href="redflag.html">Redflag</a>
+			<a href="Intervention records.html">Intervention records</a>
+			<a href="Admin.html">Admin</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+
+	</div>
+
+</header>
+
+<!-- You need this element to prevent the content of the page from jumping up -->
+<div class="header-fixed-placeholder"></div>
+
+<!-- The content of your page would go here. -->
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+
+		var showHeaderAt = 150;
+
+		var win = $(window),
+				body = $('body');
+
+		// Show the fixed header only on larger screen devices
+
+		if(win.width() > 400){
+
+			// When we scroll more than 150px down, we set the
+			// "fixed" class on the body element.
+
+			win.on('scroll', function(e){
+
+				if(win.scrollTop() > showHeaderAt) {
+					body.addClass('fixed');
+				}
+				else {
+					body.removeClass('fixed');
+				}
+			});
+
+		}
+
+	});
+
+</script>
+
+
+<!-- Demo ads. Please ignore and remove. -->
+<script src="http://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
+<h1>What is an Ireporter</h1>
+<p>Contributing to Ireporting</p>
+<p>iReport is CNN's citizen journalism initiative that allows people from around the globe to contribute pictures and video of breaking news stories. It is similar to Wikinews in that it allows, and encourages, ordinary citizens to submit stories, photos and videos related to news of any sort.</p>
+
+</body>
+
+</html>
