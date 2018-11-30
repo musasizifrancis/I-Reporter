@@ -1,7 +1,6 @@
 
 
-![AUR votes](https://img.shields.io/aur/votes/github.svg)
-
+![Mozilla Add-on](https://img.shields.io/amo/rating/dustman.svg)
 
 [![Build Status](https://travis-ci.org/musasizifrancis/I-Reporter.svg?branch=master)](https://travis-ci.org/musasizifrancis/I-Reporter)
 [![Coverage Status](https://coveralls.io/repos/github/musasizifrancis/I-Reporter/badge.svg?branch=master)](https://coveralls.io/github/musasizifrancis/I-Reporter?branch=master)
