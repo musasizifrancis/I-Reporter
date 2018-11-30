@@ -6,7 +6,8 @@ install:
   - pip install coveralls
 #Command to run tests
 script:
-  - nosetests --with-coverage --cover-tests
-  - coverage report
+   - python -m pytest --cov
 after_success:
   - coveralls 
+  
+ 
