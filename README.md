@@ -2,6 +2,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/musasizifrancis/I-Reporter/badge.svg?branch=master)](https://coveralls.io/github/musasizifrancis/I-Reporter?branch=master)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/7d463b5adb2f56d11afb/test_coverage)](https://codeclimate.com/github/musasizifrancis/I-Reporter/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/7d463b5adb2f56d11afb/maintainability)](https://codeclimate.com/github/musasizifrancis/I-Reporter/maintainability)
+25b27fcf303ebb6fd42ecb88f994806fbe7401acb21eea8452ff880e2fd04816
 
 # I-Reporter
 
