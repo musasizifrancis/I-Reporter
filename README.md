@@ -1,6 +1,7 @@
 
 
-![AppVeyor tests](https://img.shields.io/appveyor/tests/NZSmartie/coap-net-iu0to.svg?style=for-the-badge)
+![AUR votes](https://img.shields.io/aur/votes/github.svg)
+
 
 [![Build Status](https://travis-ci.org/musasizifrancis/I-Reporter.svg?branch=master)](https://travis-ci.org/musasizifrancis/I-Reporter)
 [![Coverage Status](https://coveralls.io/repos/github/musasizifrancis/I-Reporter/badge.svg?branch=master)](https://coveralls.io/github/musasizifrancis/I-Reporter?branch=master)
