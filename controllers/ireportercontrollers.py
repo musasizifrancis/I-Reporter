@@ -6,12 +6,13 @@ def addUser():
     request_data = request.get_json()
     user = User()
     user.firstName = request_data["firstName"]
-    user.LastName = request_data["lastName"]
+    user.LastName = request_data["LastName"]
     user.otherNames = request_data["otherNames"]
     user.email = request_data["email"]
     user.password = request_data["password"]
     user.registered = request_data["registered"]
-
+   
+    
     usersData = {
         "userId": len(users)+1,
         "firstName": user.firstName,
@@ -23,12 +24,25 @@ def addUser():
         "public_userId": str(uuid.uuid4())
         }
     users.append(usersData)
-    return jsonify({
+    if user is None:
+        return jsonify ({
+                  "data":users,
+                  "status":400,
+                  "message": "Wrong login credentials."
+					}), 400
+    else:    
+         return jsonify({
                     "data":users,
                     "status":201,
-                    "id":usersData['userId'],
-                    "message":"user created successully"
+                    #"id":usersData['userId'],
+                    "message": "user created successully"
+                    }), 201
+def getAllusers():
+    return jsonify({
+                    "status":201,
+                    "data":users
                     })
+                             
 
 def addIncident():
     request_data = request.get_json()

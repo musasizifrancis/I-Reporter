@@ -1,28 +1,29 @@
 from flask import Blueprint,request, jsonify
-from api.controllers.ireportercontrollers import addUser, addIncident, getAllIncidents, searchId, incidents, deleteId, users 
-import json
+from api.controllers.ireportercontrollers import addUser, addIncident, getAllIncidents, searchId, incidents, deleteId
+import json 
+#from flask import Flask
+#app = Flask(__name__)
 
 bp = Blueprint("ireporterViews", __name__, url_prefix="/api/v1")
 
 @bp.route("/users", methods=["POST"])
 def createUser():
-    return addUser()
+                    
+     return addUser()
 
 @bp.route("/red-flags", methods=["POST"])
 def createIncident():
-	data = request.get_json()
+	return addIncident()
 	
-	user = {
-	'userId': data.get('userId'),
-	'firstName': data.get('firstName'),
-	'lastName': data.get('lastName'),
-	'otherNames': data.get('otherNames'),
-	'userName': data.get('userName'),
-	'email': data.get('email'),
-	'password': data.get('password')}
-	users.append(user)
-	return jsonify(user), 200
-
+@bp.route("/users", methods=["GET"])
+def get_all_users():
+	return getAllusers()
+	
+	
+@bp.route("/users/<int:userId>", methods=["GET"])	
+def get_specific_users(userId):
+	return searchId(userId, users)	
+	
 @bp.route("/red-flags", methods=["GET"])
 def get_all_red_flag_records():
     return getAllIncidents()
