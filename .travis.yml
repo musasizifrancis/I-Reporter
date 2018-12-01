@@ -6,7 +6,8 @@ install:
   - pip install coveralls
 #Command to run tests
 script:
-   - python -m pytest --cov
+   - pytest
+   - pytest --cov=.
 after_success:
   - coveralls 
   
